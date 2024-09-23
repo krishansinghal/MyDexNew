@@ -37,9 +37,6 @@ describe("MyDex Contract with Deployed Addresses", function () {
             3600 // deadline
         )).to.not.be.reverted;
 
-        // Check the contract's token balances
-        // expect(await mockTokenA.balanceOf(myDex.target)).to.equal(ethers.parseUnits("100", 18));
-        // expect(await mockTokenB.balanceOf(myDex.target)).to.equal(ethers.parseUnits("100", 18));
     });
 
     it("should swap tokens using the deployed router", async function () {
@@ -61,8 +58,6 @@ describe("MyDex Contract with Deployed Addresses", function () {
             3600 // deadline
         )).to.not.be.reverted;
 
-        // Additional checks can be done here (like checking balances, events, etc.)
-        // expect(await mockTokenA.balanceOf(myDex.target)).to.equal(ethers.parseUnits("20", 18));
     });
 
     it("should remove liquidity using the deployed router", async function () {
@@ -76,7 +71,7 @@ describe("MyDex Contract with Deployed Addresses", function () {
         );
 
         // Mock liquidity value
-        const liquidity = 1; // Example liquidity value, this will depend on your actual test setup
+        const liquidity = 1; 
 
         await myDex.removeLiquidity(
             liquidity,
