@@ -74,8 +74,7 @@ TokenB : 0x2E9B3083E142F90aedB50CF5cfC876d91Cc85D19
 
 After the succesful deployment you will get the `Contract Address`.
 
-- Copy the `Contract Address` and go to deployed Token contracts. Paste the contract address to the `Approve function` of deployed `tokenA`. Approve the require amount of tokens. 
-- Repeat the same process for the `TokenB`.
+Make sure to `Approve` the  Dex contract for the token.
 
 After the succesful Approve, the MyDex is ready to perform the following Operations:
 
